@@ -210,6 +210,12 @@ def detect_faces():
             minNeighbors=5, 
             minSize=(30, 30)
         )
+
+        # Count faces
+        face_count = len(faces)
+        # Display count at top-left corner
+        cv2.putText(frame, f'Faces detected: {face_count}', 
+           (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
         
         # Draw rectangles around detected faces
         for (x, y, w, h) in faces:
