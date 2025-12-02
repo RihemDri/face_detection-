@@ -225,7 +225,7 @@ def detect_faces():
             break
     
     # Release the webcam and close all windows
-    cap.release()
+    cap.release() #Releases the webcam for other programs
     cv2.destroyAllWindows()
 
 
