@@ -11,7 +11,11 @@ st.set_page_config(
     page_icon="👨‍🏫",
     layout="wide"
 )
-
+ 
+st.title("face Detection Application")
+# EYES DETECTION
+st.write("""hello to the face detection app  
+         **this  application can detect faces and eyes using OpenCV library**""")
 # Custom styling
 st.markdown("""
 <style>
