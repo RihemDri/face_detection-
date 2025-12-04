@@ -95,13 +95,13 @@ def detect_faces():
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,165,255), 2)
                 break  # detect only the first mouth
 
-        cv2.imshow("Face + Features Detection", img)
+        cv2.imshow("Face + Features Detection", frame)
 
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
     cap.release()
-    cv2.destroyAllWindows()
+    #cv2.destroyAllWindows()
 
 
 # Streamlit App
